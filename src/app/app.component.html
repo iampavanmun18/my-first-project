@@ -6,11 +6,26 @@
 
 <br />
 <br />
-<input type="text" #box (keyup)="getData(box.value)" placeholder="event-keyup" />
+
+<input type="text" #box1 name="UserName" placeholder="Enter Username" />
+<button #box1 (click)="getValue(box1.value)">Click for Value</button>
+
+<p>
+    Button Click value is: {{displayVal}}
+</p>
+
+<br />
+
+<input type="text" (keyup)="getValueforInput(box.value)" #box name="UserName" placeholder="Enter Username" />
+<p>
+    Input value is: {{displayValforInput}}
+</p>
+
+<!-- <input type="text" #box (keyup)="getData(box.value)" placeholder="event-keyup" />
 <input type="text" #box2 ((keydown))="getData(box2.value)" placeholder="event-keydown" />
 <input type="text" #box3 ((blur))="getData(box3.value)" placeholder="event-blur" />
 
-<h1 (mouseover)="getData('over')">Code Step By Step</h1>
+<h1 (mouseover)="getData('over')">Code Step By Step</h1> -->
 <!-- <input type="text" #box (keyup)="getData(box.value)" placeholder="event-keyup"/> -->
 <!-- <app-clover></app-clover>
 <app-user-list></app-user-list>

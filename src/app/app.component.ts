@@ -7,11 +7,23 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = '16';
+  displayVal ="";
+  displayValforInput ="";
   getName(name: any){
     return  alert(name)
   }
 
   getData(value: any){
-    return console.log('Hey I am the event!!', value)
+     console.log('Hey I am the event!!', value)
   }
+
+  getValue(val:string){
+      this.displayVal = val;
+     console.warn('This is input element value displayed on screen', val)
+  }
+
+  getValueforInput(val:string){
+   this.displayValforInput =val
+   console.warn('This is input element value displayed on screen', val)
+}
 }
