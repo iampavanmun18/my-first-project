@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = '16';
+  getName(name: any){
+    return  alert(name)
+  }
+
+  getData(){
+    return console.log('Hey I am the event!!')
+  }
 }
