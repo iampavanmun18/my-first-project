@@ -11,7 +11,7 @@ export class AppComponent {
     return  alert(name)
   }
 
-  getData(){
-    return console.log('Hey I am the event!!')
+  getData(value: any){
+    return console.log('Hey I am the event!!', value)
   }
 }
