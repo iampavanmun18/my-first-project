@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { CloverComponent } from './clover/clover.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { StudentListComponent } from './student-list/student-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CloverComponent,
-    UserListComponent
+    UserListComponent,
+    StudentListComponent
   ],
   imports: [
     BrowserModule
