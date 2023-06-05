@@ -2,7 +2,16 @@
 <!-- function call -->
 <button (click)="getName('Pavan Mundada')">Click Me</button>
 
-<button (click)="getData()">Events in Angular</button>
+<button (click)="getData('hello')">Events in Angular</button>
+
+<br />
+<br />
+<input type="text" #box (keyup)="getData(box.value)" placeholder="event-keyup" />
+<input type="text" #box2 ((keydown))="getData(box2.value)" placeholder="event-keydown" />
+<input type="text" #box3 ((blur))="getData(box3.value)" placeholder="event-blur" />
+
+<h1 (mouseover)="getData('over')">Code Step By Step</h1>
+<!-- <input type="text" #box (keyup)="getData(box.value)" placeholder="event-keyup"/> -->
 <!-- <app-clover></app-clover>
 <app-user-list></app-user-list>
 <app-student-list></app-student-list>
