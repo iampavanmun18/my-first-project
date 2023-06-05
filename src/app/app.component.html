@@ -1,34 +1,5 @@
-<h1>Hello Angular {{title}}</h1>
-<!-- function call -->
-<button (click)="getName('Pavan Mundada')">Click Me</button>
+<h1>Counter Example</h1>
 
-<button (click)="getData('hello')">Events in Angular</button>
-
-<br />
-<br />
-
-<input type="text" #box1 name="UserName" placeholder="Enter Username" />
-<button #box1 (click)="getValue(box1.value)">Click for Value</button>
-
-<p>
-    Button Click value is: {{displayVal}}
-</p>
-
-<br />
-
-<input type="text" (keyup)="getValueforInput(box.value)" #box name="UserName" placeholder="Enter Username" />
-<p>
-    Input value is: {{displayValforInput}}
-</p>
-
-<!-- <input type="text" #box (keyup)="getData(box.value)" placeholder="event-keyup" />
-<input type="text" #box2 ((keydown))="getData(box2.value)" placeholder="event-keydown" />
-<input type="text" #box3 ((blur))="getData(box3.value)" placeholder="event-blur" />
-
-<h1 (mouseover)="getData('over')">Code Step By Step</h1> -->
-<!-- <input type="text" #box (keyup)="getData(box.value)" placeholder="event-keyup"/> -->
-<!-- <app-clover></app-clover>
-<app-user-list></app-user-list>
-<app-student-list></app-student-list>
-<app-country-list></app-country-list>
-<app-login></app-login> -->
+<button (click)="counter('add')">++</button>
+{{count}}
+<button (click)="counter('remove')">--</button>

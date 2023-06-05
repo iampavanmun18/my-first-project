@@ -9,6 +9,7 @@ export class AppComponent {
   title = '16';
   displayVal ="";
   displayValforInput ="";
+  count = 0;
   getName(name: any){
     return  alert(name)
   }
@@ -26,4 +27,10 @@ export class AppComponent {
    this.displayValforInput =val
    console.warn('This is input element value displayed on screen', val)
 }
+
+counter(type:string){
+  type === 'add' ? this.count++ : this.count--
+}
+
+
 }
