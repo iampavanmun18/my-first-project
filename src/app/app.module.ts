@@ -10,6 +10,7 @@ import { CountryListComponent } from './country-list/country-list.component';
 import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatButtonModule  } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,15 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     UserListComponent,
     StudentListComponent,
     CountryListComponent,
-    HeaderComponent
+    HeaderComponent,
+
   ],
   imports: [
     MatSlideToggleModule,
     BrowserModule,
     UserAuthModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
