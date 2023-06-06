@@ -1,7 +1,11 @@
 <h1>for loop example</h1>
 <!-- print the array elements using *ngFor -->
-<h3 *ngFor="let item of users">{{item}}</h3>
-<br/><br/>
 
-<!-- Array of objects -->
-<h3 *ngFor="let item of userDetail">{{item.name}} -- {{item.email}} -- {{item.phone}}</h3>
+<ul *ngFor="let user of userDetail">
+    <li>{{user.name}}</li>
+    <li>{{user.email}}</li>
+    <!-- print Array of array -->
+    <ul *ngFor="let account of user.socialAccounts">
+        <li>{{account}}</li>
+    </ul>
+</ul>
