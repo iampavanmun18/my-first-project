@@ -6,12 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  userDetail = [
-    {
-      name: 'Pavan',
-      email: 'pavan@gmail.com',
-      age: 25,
-    },
-    { name: 'Yash', email: 'Yash@gmail.com', age: 16 },
-  ];
+  title= "send data from child to Parent"
+  data_C_P = 'x'
+
+  // this is Parent component
+  updateData(item:string){
+    console.warn('*****', item)
+    this.data_C_P = item
+  }
 }
