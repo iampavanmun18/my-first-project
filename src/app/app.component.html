@@ -1,18 +1,7 @@
-<h1>Switch Case example</h1>
-<div [ngSwitch]="color==='red'">
-    <div *ngSwitchCase="color==='red'">Color is red</div>
-    <div *ngSwitchDefault>Color is everything1</div>
-</div>
+<h1>for loop example</h1>
+<!-- print the array elements using *ngFor -->
+<h3 *ngFor="let item of users">{{item}}</h3>
+<br/><br/>
 
-
-<ng-container [ngSwitch]="color==='black'">
-    <ng-container *ngSwitchCase="color==='red'">
-        <ng-container *ngTemplateOutlet="form1">******111111*******</ng-container>
-    </ng-container>
-    <ng-container *ngSwitchCase="color==='blue'">
-        <ng-container *ngTemplateOutlet="form1">*****22222******</ng-container>
-    </ng-container>
-    <ng-container *ngSwitchCase="color==='black'">FORM 2</ng-container>
-    <ng-container *ngSwitchDefault>FORM 3</ng-container>
-    <ng-template #form1>FORM 1</ng-template>
-</ng-container>
+<!-- Array of objects -->
+<h3 *ngFor="let item of userDetail">{{item.name}} -- {{item.email}} -- {{item.phone}}</h3>
