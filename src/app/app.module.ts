@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatButtonModule  } from '@angular/material/button';
+import { UserDetailComponent } from './user-detail/user-detail.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import {MatButtonModule  } from '@angular/material/button';
     StudentListComponent,
     CountryListComponent,
     HeaderComponent,
+    UserDetailComponent,
 
   ],
   imports: [

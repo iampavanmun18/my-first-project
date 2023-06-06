@@ -6,10 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-
-  display = false;
-  toggle(){
-    this.display = !this.display;
-  }
-
+  userDetail = [
+    {
+      name: 'Pavan',
+      email: 'pavan@gmail.com',
+      age: 25,
+    },
+    { name: 'Yash', email: 'Yash@gmail.com', age: 16 },
+  ];
 }
