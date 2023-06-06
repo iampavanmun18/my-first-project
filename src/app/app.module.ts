@@ -7,6 +7,7 @@ import { CloverComponent } from './clover/clover.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { CountryListComponent } from './country-list/country-list.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CountryListComponent } from './country-list/country-list.component';
     CloverComponent,
     UserListComponent,
     StudentListComponent,
-    CountryListComponent
+    CountryListComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
