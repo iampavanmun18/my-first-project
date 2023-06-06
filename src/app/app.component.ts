@@ -10,5 +10,7 @@ export class AppComponent {
 
   name = "peter"
   disabled = false;
+  show= false;
+  isNewUser = true
 
 }

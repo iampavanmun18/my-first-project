@@ -1,10 +1,37 @@
-<h1>Interpollation</h1>
+<h1>If-else example</h1>
 
-<!-- Interpollation (can be used on string, etc but not on Boolean) -->
-<input type="text" name="Username" value={{name}} disabled={{disabled}}>
-<br />
-<br />
+<!-- negated variable to achieve "if not" -->
+<!-- <div [ngIf]="!show" [ngIfElse]="isNewUser" >
+    Please login, friend.
+  </div> -->
 
-<h1>property Binding</h1>
-<!-- Property Binding (can be used on string, boolean etc) Prefer property Binding over Interpollation -->
-<input type="text" name="Username" [value]=name [disabled]=disabled>
+<!-- logic && operator -->
+<!-- <div *ngIf="show && !isNewUser">
+    Welcome back, friend.
+  </div> -->
+
+<!-- logic OR operator -->
+<!-- <div *ngIf="show || isNewUser">
+    Welcome!
+  </div> -->
+
+<!-- <ng-template #isNewUser>
+   <div>
+    Please, Login my Friend!!
+   </div>
+  </ng-template> -->
+
+
+<ng-container *ngIf="show; then loggedIn; else loggedOut">
+</ng-container>
+
+<ng-template #loggedIn>
+    <div>
+        Welcome back, friend.
+    </div>
+</ng-template>
+<ng-template #loggedOut>
+    <div>
+        Please friend, login.
+    </div>
+</ng-template>
