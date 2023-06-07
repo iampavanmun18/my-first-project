@@ -6,9 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title= "template variable ref"
-  getValue(item:any){
-    console.warn('*************', item)
-  }
+  title= "Basics of typescript";
+  data:number = 20
 
 }
