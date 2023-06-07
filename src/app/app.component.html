@@ -1,3 +1,7 @@
 <app-header></app-header>
-{{data_C_P}}
-<app-child (updateDataEvent)="updateData($event)"></app-child>
+{{title}}
+
+<!-- banana bracket under one box bracket ngModel is written-->
+<input type="text" [(ngModel)]="name"/>
+
+<h3>{{name}}</h3>

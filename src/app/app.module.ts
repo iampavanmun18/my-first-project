@@ -9,13 +9,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
 import { ChildComponent } from './child/child.component';
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
-  declarations: [AppComponent, CountryListComponent, HeaderComponent, ChildComponent],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
+  declarations: [
+    AppComponent,
+    CountryListComponent,
+    HeaderComponent,
+    ChildComponent,
   ],
+  //  FormsModule for two way data binding
+  imports: [BrowserModule, BrowserAnimationsModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
