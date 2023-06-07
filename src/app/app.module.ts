@@ -13,6 +13,10 @@ import { FormsModule } from '@angular/forms';
 import { UsdINRPipe } from './pipes/usd-inr.pipe';
 import { ReactiveFormsModule } from "@angular/forms";
 import { RedElementDirective } from './red-element.directive';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { UserComponent } from './user/user.component';
+import { AboutComponent } from './about/about.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,9 +25,12 @@ import { RedElementDirective } from './red-element.directive';
     ChildComponent,
     UsdINRPipe,
     RedElementDirective,
+    HomeComponent,
+    UserComponent,
+    AboutComponent,
   ],
   //  FormsModule for two way data binding
-  imports: [BrowserModule, BrowserAnimationsModule, FormsModule, ReactiveFormsModule],
+  imports: [BrowserModule, BrowserAnimationsModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
