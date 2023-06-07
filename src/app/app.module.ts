@@ -10,12 +10,14 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
 import { ChildComponent } from './child/child.component';
 import { FormsModule } from '@angular/forms';
+import { UsdINRPipe } from './pipes/usd-inr.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     CountryListComponent,
     HeaderComponent,
     ChildComponent,
+    UsdINRPipe,
   ],
   //  FormsModule for two way data binding
   imports: [BrowserModule, BrowserAnimationsModule, FormsModule],
