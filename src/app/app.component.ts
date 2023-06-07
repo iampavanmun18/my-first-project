@@ -9,4 +9,9 @@ export class AppComponent {
   title= "Pipes inside typescript";
   today = Date()
 
+  user = {
+    name: 'Pavan',
+    age: '25'
+  }
+
 }
