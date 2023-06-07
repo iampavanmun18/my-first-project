@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title= "template variable ref"
-  getValue(item:HTMLInputElement){
+  getValue(item:any){
     console.warn('*************', item)
   }
 
