@@ -1,12 +1,11 @@
 <app-header></app-header>
-<h3>{{title | uppercase}}</h3>
-<h3>{{title | lowercase}}</h3>
 <h3>{{title}}</h3>
-<!-- advance pipe - we can use multiple pipe in angular -->
-<h3>{{title | slice : 3 | uppercase}}</h3>
-
-<h4>{{today | date  }}</h4>
-
-<!-- using json in angular using pipe -->
-<h3>{{user | json | uppercase}}</h3>
-<h3>{{20 | currency : 'INR'}}</h3>
+<form #loginform="ngForm" (ngSubmit)=userLogin(loginform.value)>
+    <input type="text" placeholder="Username" name="name" ngModel/>
+    <br/>
+    <br/>
+    <input type="password" placeholder="Username" name="password" ngModel/>
+    <br/>
+    <br/>
+    <button>Logins</button>
+</form>

@@ -6,12 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title= "Pipes inside typescript";
-  today = Date()
-
-  user = {
-    name: 'Pavan',
-    age: '25'
+  title= "Template driven forms in angular";
+  userLogin(item:any){
+    console.warn(item)
   }
 
 }
