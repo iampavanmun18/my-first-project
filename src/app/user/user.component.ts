@@ -10,6 +10,8 @@ export class UserComponent implements OnInit {
   userId: any;
   constructor(private route: ActivatedRoute) {}
   ngOnInit(): void {
+
+    //grab id from ActivateRoute.
     console.log('User id is', this.route.snapshot.paramMap.get('id'));
     this.userId = this.route.snapshot.paramMap.get('id');
   }
