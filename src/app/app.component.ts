@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title= "Two way data binding"
-  name:any;
+  title= "template variable ref"
+  getValue(item:HTMLInputElement){
+    console.warn('*************', item)
+  }
 
 }

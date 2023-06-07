@@ -1,7 +1,6 @@
 <app-header></app-header>
 {{title}}
 
-<!-- banana bracket under one box bracket ngModel is written-->
-<input type="text" [(ngModel)]="name"/>
-
-<h3>{{name}}</h3>
+<input type="text" #box placeholder="Enter Username"/>
+<!-- this will give the reference to template variable thr #box -->
+<button (click)="getValue(box)">Call function</button>
