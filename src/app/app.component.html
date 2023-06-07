@@ -1,8 +1,8 @@
 <app-header></app-header>
 <h3>{{title}}</h3>
 
-<a [routerLink]="['/about']" routerLinkActive="router-link-active" href="about">About</a>
-<a [routerLink]="['/user']" routerLinkActive="router-link-active" href="user">User</a>
+<a [routerLink]="['about']" routerLinkActive="router-link-active" href="about">About</a>
+<a [routerLink]="['user']" routerLinkActive="router-link-active" href="user">User</a>
 <a [routerLink]="['']" routerLinkActive="router-link-active" href="">Home</a>
 
 <br />
@@ -11,7 +11,7 @@
 
 <!-- pass the id's into user -->
 <a [routerLink]="['user/20']" routerLinkActive="router-link-active" href="user">Dhinchak</a>
-<br/>
+<br />
 <a [routerLink]="['user/30']" routerLinkActive="router-link-active" href="user">Pooja</a>
 
 <router-outlet></router-outlet>
