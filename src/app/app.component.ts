@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { FormControl,FormGroup } from "@angular/forms";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,8 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title= "Template driven forms in angular";
-  userLogin(item:any){
-    console.warn(item)
+  loginform  = new FormGroup({
+    user:new FormControl(''),
+    password:new FormControl('')
+  })
+  userLogin(){
+    console.warn(this.loginform.value)
   }
 
 }

@@ -1,11 +1,11 @@
 <app-header></app-header>
 <h3>{{title}}</h3>
-<form #loginform="ngForm" (ngSubmit)=userLogin(loginform.value)>
-    <input type="text" placeholder="Username" name="name" ngModel/>
-    <br/>
-    <br/>
-    <input type="password" placeholder="Username" name="password" ngModel/>
-    <br/>
-    <br/>
-    <button>Logins</button>
+<form [formGroup]="loginform" (ngSubmit)="userLogin">
+    <input type="text" placeholder="Username" name="name" formControlName="user" />
+    <br />
+    <br />
+    <input type="password" placeholder="Username" name="password" formControlName="password" />
+    <br />
+    <br />
+    <button>Login</button>
 </form>
