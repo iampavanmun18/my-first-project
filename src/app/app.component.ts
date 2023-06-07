@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title= "Basics of typescript";
-  data:number = 20
+  title= "Pipes inside typescript";
+  today = Date()
 
 }
