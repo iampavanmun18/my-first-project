@@ -20,6 +20,7 @@ import { AboutComponent } from './about/about.component';
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +35,7 @@ import { AboutCompanyComponent } from './about-company/about-company.component';
     NoPageFoundComponent,
     AboutMeComponent,
     AboutCompanyComponent,
+    FooterComponent,
   ],
   //  FormsModule for two way data binding
   imports: [BrowserModule, BrowserAnimationsModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
